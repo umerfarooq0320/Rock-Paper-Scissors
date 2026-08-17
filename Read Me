@@ -1,0 +1,23 @@
+🎮 Rock Paper Scissors
+
+A simple Rock Paper Scissors game built with HTML, CSS, and JavaScript.
+
+✨ Features
+🪨 Rock, 📄 Paper & ✂️ Scissors
+🤖 Play against the computer
+🏆 Win, lose & draw detection
+📊 Live score tracking
+📱 Responsive UI
+🛠️ Built With
+HTML5
+CSS3
+JavaScript
+🚀 How to Play
+Choose Rock, Paper, or Scissors.
+The computer randomly chooses its move.
+See the result and updated score.
+Keep playing and try to beat the computer! 🎮
+  
+Clone this repository:git clone https://github.com/umerfarooq0320/Rock-Paper-Scissors
+
+⭐ If you like this project, consider giving it a star!
