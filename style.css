@@ -35,7 +35,7 @@ h1 {
 
 .subtitle {
     color: #d1d5db;
-    font-size: 17px;
+    font-size: 22px;
 }
 
 .choices {
@@ -149,6 +149,29 @@ h1 {
 .mode-btn.active {
     background: #38bdf8;
     color: #141e30;
+}
+#reset-btn {
+    margin-top: 25px;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: #38bdf8;
+    color: #141e30;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+#reset-btn:hover {
+    background-color: #0ea5e9;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(14, 165, 233, 0.3);
+}
+
+#reset-btn:active {
+    transform: translateY(0);
 }
 
 @media (max-width: 600px) {
