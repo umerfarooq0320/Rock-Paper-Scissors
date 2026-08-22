@@ -4,54 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
-    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-            <h1>Rock Paper Scissors</h1>
-       <main class="game-container">
-        <p class="subtitle">Choose your move and compete!</p>
-        <div class="game-modes">
-    <button class="mode-btn active" id="single-player">
-        Single Player
-    </button>
 
-    <button class="mode-btn" id="two-player">
-        2 Players
-    </button>
+<body class="min-h-screen font-sans flex flex-col justify-center items-center bg-gradient-to-br from-[#141e30] to-[#243b55] text-white">
+
+    <h1 class="text-[42px] font-bold mb-[10px]">Rock Paper Scissors</h1>
+    <main class="w-[70%] max-w-[700px] min-h-[550px] p-[40px_30px] text-center bg-white/10 border border-white/20 rounded-[20px] backdrop-blur-[10px] shadow-[0_20px_50px_rgba(0,0,0,0.3)]">
+     <p class="text-[#d1d5db] text-[22px]">Choose your move and compete!</p>
+<!-- Game Modes -->
+<div class="flex justify-center gap-[15px] mt-[25px]">
+     <button class="mode-btn active py-[12px] px-[25px] border-2 border-[#38bdf8] rounded-[10px] bg-[#38bdf8] text-[#141e30] text-[16px] font-bold cursor-pointer transition-all duration-300 hover:bg-[#38bdf8] hover:text-[#141e30] hover:-translate-y-0.5"
+      id="single-player">Single Player</button>
+     <button
+                class="mode-btn py-[12px] px-[25px] border-2 border-[#38bdf8] rounded-[10px] bg-transparent text-white text-[16px] font-bold cursor-pointer transition-all duration-300 hover:bg-[#38bdf8] hover:text-[#141e30] hover:-translate-y-0.5"
+                id="two-player">2 Players</button>
 </div>
-        <section class="choices">
+<!-- Choices -->
+        <section class="flex justify-center items-center gap-[30px] mt-[45px]">
+<div
+                class="choice w-[130px] h-[130px] rounded-full bg-white p-2 cursor-pointer transition-all duration-300 ease-in-out shadow-[0_8px_20px_rgba(0,0,0,0.25)] hover:-translate-y-2.5 hover:scale-105 hover:border-4 hover:border-[#38bdf8] hover:shadow-[0_15px_30px_rgba(0,0,0,0.4)]"
+                id="rock"><img
+                    src="./images/rock.png"
+                    alt="Rock"
+                    class="w-full h-full object-cover rounded-full"></div>
+<div
+                class="choice w-[130px] h-[130px] rounded-full bg-white p-2 cursor-pointer transition-all duration-300 ease-in-out shadow-[0_8px_20px_rgba(0,0,0,0.25)] hover:-translate-y-2.5 hover:scale-105 hover:border-4 hover:border-[#38bdf8] hover:shadow-[0_15px_30px_rgba(0,0,0,0.4)]"
+                id="paper">
+                <img
+                    src="./images/paper.png"
+                    alt="Paper"
+                    class="w-full h-full object-cover rounded-full"></div>
+<div
+                class="choice w-[130px] h-[130px] rounded-full bg-white p-2 cursor-pointer transition-all duration-300 ease-in-out shadow-[0_8px_20px_rgba(0,0,0,0.25)] hover:-translate-y-2.5 hover:scale-105 hover:border-4 hover:border-[#38bdf8] hover:shadow-[0_15px_30px_rgba(0,0,0,0.4)]"
+                id="scissors"><img
+                    src="./images/scissors.jpg"
+                    alt="Scissors"
+                    class="w-full h-full object-cover rounded-full"></div>
 
-            <div class="choice" id="rock">
-                <img src="./images/rock.png" alt="Rock">
-            </div>
+</section><p class="mt-[25px] text-[18px] text-[#cbd5e1]">Choose your move</p>
 
-            <div class="choice" id="paper">
-                <img src="./images/paper.png" alt="Paper">
-            </div>
+        <!-- Result -->
+<div class="mt-[25px] min-h-[40px] flex justify-center items-center"><p
+                id="result-message"
+                class="text-[24px] font-bold" >Make your move!</p></div>
 
-            <div class="choice" id="scissors">
-                <img src="./images/scissors.jpg" alt="Scissors">
-            </div>
-        </section>
+        <!-- Score Board -->
+<section class="mt-[35px] flex justify-center items-center gap-[35px]"><div class="min-w-[100px]">
+<span id="player-score" class="block text-[45px] font-bold text-[#38bdf8]">0</span>
+<p class="mt-[5px] text-[16px] text-[#cbd5e1]" id="player-one-label">You</p></div>
 
-        <p class="choose-text">Choose your move</p>
-        <div class="result">
-            <p id="result-message">Make your move!</p>
-        </div>
-
-    <section class="score-board">
-    <div class="score">
-        <span id="player-score">0</span>
-        <p id="player-one-label">You</p>
-    </div>
-    <div class="divider">:</div>
-    <div class="score">
-        <span id="computer-score">0</span>
-        <p id="player-two-label">Computer</p>
-    </div>
+<div class="text-[40px] font-bold text-[#64748b]">:</div>
+<div class="min-w-[100px]">
+                <span
+                    id="computer-score"
+                    class="block text-[45px] font-bold text-[#38bdf8]">0</span>
+                <p class="mt-[5px] text-[16px] text-[#cbd5e1]" id="player-two-label">Computer</p>
+               </div>
 </section>
-<button id="reset-btn">Reset Game</button>
-    </main>
+
+        <!-- Reset Button -->
+<button id="reset-btn"
+            class="mt-[25px] py-[12px] px-[30px] border-none rounded-[10px] bg-[#38bdf8] text-[#141e30] text-[16px] font-bold cursor-pointer transition-all duration-300 hover:bg-[#0ea5e9] hover:text-white hover:-translate-y-[3px] hover:shadow-[0_8px_20px_rgba(14,165,233,0.3)] active:translate-y-0">
+            Reset Game</button>
+
+</main>
     <script src="script.js"></script>
 </body>
 </html>
+
