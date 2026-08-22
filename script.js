@@ -173,4 +173,23 @@ choices.forEach(choice => {
         }
     });
 
+    const resetButton = document.querySelector("#reset-btn");
+
+resetButton.addEventListener("click", () => {
+    
+    userScore = 0;
+    computerScore = 0;
+
+    playerScoreElement.textContent = "0";
+    computerScoreElement.textContent = "0";
+
+    playerOneChoice = null;
+
+    if (gameMode === "single") {
+        resultMessage.textContent = "Make your move!";
+    } else {
+        resultMessage.textContent = "Player 1, choose your move!";
+    }
+});
+
 });
