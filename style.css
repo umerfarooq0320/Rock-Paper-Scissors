@@ -121,6 +121,36 @@ h1 {
     color: #64748b;
 }
 
+.game-modes {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.mode-btn {
+    padding: 12px 25px;
+    border: 2px solid #38bdf8;
+    border-radius: 10px;
+    background: transparent;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.mode-btn:hover {
+    background: #38bdf8;
+    color: #141e30;
+    transform: translateY(-2px);
+}
+
+.mode-btn.active {
+    background: #38bdf8;
+    color: #141e30;
+}
+
 @media (max-width: 600px) {
 
     .game-container {
@@ -143,4 +173,13 @@ h1 {
     .score-board {
         gap: 20px;
     }
+
+    .game-modes {
+    gap: 10px;
+}
+
+.mode-btn {
+    padding: 10px 16px;
+    font-size: 14px;
+}
 }
