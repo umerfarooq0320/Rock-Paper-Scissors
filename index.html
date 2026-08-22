@@ -10,6 +10,15 @@
             <h1>Rock Paper Scissors</h1>
        <main class="game-container">
         <p class="subtitle">Choose your move and compete!</p>
+        <div class="game-modes">
+    <button class="mode-btn active" id="single-player">
+        Single Player
+    </button>
+
+    <button class="mode-btn" id="two-player">
+        2 Players
+    </button>
+</div>
         <section class="choices">
 
             <div class="choice" id="rock">
@@ -30,20 +39,17 @@
             <p id="result-message">Make your move!</p>
         </div>
 
-        <section class="score-board">
-
-            <div class="score">
-                <span id="player-score">0</span>
-                <p>You</p>
-            </div>
-
-            <div class="divider">:</div>
-
-            <div class="score">
-                <span id="computer-score">0</span>
-                <p>Computer</p>
-            </div>
-        </section>
+    <section class="score-board">
+    <div class="score">
+        <span id="player-score">0</span>
+        <p id="player-one-label">You</p>
+    </div>
+    <div class="divider">:</div>
+    <div class="score">
+        <span id="computer-score">0</span>
+        <p id="player-two-label">Computer</p>
+    </div>
+</section>
     </main>
     <script src="script.js"></script>
 </body>
