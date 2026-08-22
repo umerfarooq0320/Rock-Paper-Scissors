@@ -1,23 +1,132 @@
-🎮 Rock Paper Scissors
+# 🎮 Rock Paper Scissors
 
-A simple Rock Paper Scissors game built with HTML, CSS, and JavaScript.
+A simple and interactive **Rock Paper Scissors** game built with **HTML, Tailwind CSS, and JavaScript**.
 
-✨ Features
-🪨 Rock, 📄 Paper & ✂️ Scissors
-🤖 Play against the computer
-🏆 Win, lose & draw detection
-📊 Live score tracking
-📱 Responsive UI
-🛠️ Built With
+The game features both **Single Player** mode against the computer and **2 Players** mode for playing with a friend on the same device.
+
+## ✨ Features
+
+* 🪨 Rock, 📄 Paper & ✂️ Scissors
+* 🤖 Single Player mode — play against the computer
+* 👥 2 Players mode — play with a friend
+* 🏆 Win, lose & draw detection
+* 📊 Live score tracking
+* 🔄 Reset Game button
+* 🎯 Interactive move selection
+* ✨ Smooth hover effects and animations
+* 📱 Responsive design
+* 🎨 Modern UI built with Tailwind CSS
+
+## 🕹️ Game Modes
+
+### 🤖 Single Player
+
+Play against the computer.
+
+1. Select **Single Player** mode.
+2. Choose Rock, Paper, or Scissors.
+3. The computer randomly selects its move.
+4. The winner is displayed.
+5. The score is updated automatically.
+
+### 👥 2 Players
+
+Play against another player on the same device.
+
+1. Select **2 Players** mode.
+2. Player 1 chooses a move.
+3. Player 2 chooses a move.
+4. The winner is displayed.
+5. The winning player's score is updated.
+
+## 🛠️ Built With
+
+* **HTML5** — Page structure
+* **Tailwind CSS** — Styling, responsive design, hover effects & animations
+* **JavaScript** — Game logic, DOM manipulation & score tracking
+
+## 🎯 Game Rules
+
+| Move        | Beats       |
+| ----------- | ----------- |
+| 🪨 Rock     | ✂️ Scissors |
+| 📄 Paper    | 🪨 Rock     |
+| ✂️ Scissors | 📄 Paper    |
+
+If both players choose the same move, the round ends in a **draw**.
+
+## 🔄 Reset Game
+
+Click the **Reset Game** button to:
+
+* Reset Player 1's score
+* Reset Player 2 / Computer's score
+* Clear the current player selection
+* Start a fresh game without changing the selected game mode
+
+## 📁 Project Structure
+
+```text
+Rock-Paper-Scissors/
+│
+├── images/
+│   ├── rock.png
+│   ├── paper.png
+│   └── scissors.jpg
+│
+├── index.html
+├── script.js
+└── README.md
+```
+
+> The project uses **Tailwind CSS via CDN**, so there is no separate `style.css` file or Tailwind build configuration required.
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/umerfarooq0320/Rock-Paper-Scissors.git
+```
+
+### 2. Open the project
+
+```bash
+cd Rock-Paper-Scissors
+```
+
+### 3. Run the game
+
+Open `index.html` in your browser.
+
+That's it! 🎮
+
+No additional dependencies or installation are required.
+
+## 💻 Technologies
+
+```text
 HTML5
-CSS3
+Tailwind CSS
 JavaScript
-🚀 How to Play
-Choose Rock, Paper, or Scissors.
-The computer randomly chooses its move.
-See the result and updated score.
-Keep playing and try to beat the computer! 🎮
-  
-Clone this repository:git clone https://github.com/umerfarooq0320/Rock-Paper-Scissors
+```
 
-⭐ If you like this project, consider giving it a star!
+## 📸 Preview
+
+A modern and responsive Rock Paper Scissors game featuring:
+
+* Interactive game choices
+* Single Player and 2 Players modes
+* Live score updates
+* Result messages
+* Reset functionality
+* Responsive Tailwind CSS interface
+
+## ⭐ Support
+
+If you like this project, consider giving it a ⭐ **star** on GitHub!
+
+---
+
+Made with ❤️ using **HTML, Tailwind CSS & JavaScript**.
+
